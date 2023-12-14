@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Education</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="functions-min.js" ></script>
+  </head>
+
+
+  <body>
+    <header class="header" style="margin-bottom:0px; padding-bottom: 20px; padding-top: 10px;>
+
+
+    <div id="top" class="navigation">
+        <div class="navigation__wrapper wrapper--large">
+          <a class="navigation__logo logo" href="education.html" style="font-size: 20px;" >>Dirar Badr</a>
+          <nav class="navigation__container">
+            <ul class="navigation__list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="education.html">Education</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+   
+    </header>
+    <hr>
+
+        <!-- SECTION: Contact -->
+        <section id="contact" class="contact">
+            <h2 class="contact__heading title">Contact Me</h2>
+            <div class="contact__wrapper wrapper--large">
+              <div class="contact__visual">
+                <img src="./img/contact-visual.png" />
+              </div>
+              <!-- Simple form setup: formspree.io -->
+              <form class="contact__form">
+                
+                <input
+                  class="contact__form-el contact__form-el--name"
+                  type="text"
+                  placeholder="Your Name"
+                  spellcheck="false"
+                  id="nom"
+                  
+                  onkeyup="nameValidation()"
+                />
+                <p id="nomerror" ></p>
+                <input
+                  class="contact__form-el contact__form-el--email"
+                  type="email"
+                  placeholder="Your Email"
+                  spellcheck="false"
+                  id="email"
+                  onkeyup="emailValidation()"
+
+                  
+                />
+                <p id="emailerror"></p>
+                <textarea
+                  class="contact__form-el contact__form-el--message"
+                  placeholder="Your Message"
+                  id="msg"
+                  onclick="msgValidation()"
+
+
+                ></textarea>
+                <p id="msgerror"></p>
+                <input
+                  class="contact__form-el contact__form-el--submit"
+                  type="submit"
+                  value="Send"
+                  onclick="validateForm()"
+                />
+              </form>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+        <!-- SECTION: Footer -->
+        <footer class="footer">
+          <div class="footer__wrapper wrapper--large">
+            <p class="footer__copyright no-margin">&copy; 2023 -Esprit</p>
+            <div class="footer__contacts">
+              <a href="tel:+123456789"> Téléphone: (+216)92912762</a>
+              <a href="mailto:badr.dirar@esprit.tn"> Email: badr.dirar@esprit.tn</a>
+              <a href="https://www.facebook.com/dirar.badr/"  target="_blank"> Facebook</a>
+              
+            </div>
+          </div>
+        </footer>
+    <!-- END SECTION: Footer -->
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/functions-min.js"></script>
+  </body>
+
+</html>
